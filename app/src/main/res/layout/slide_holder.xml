@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shadow">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <!-- Overlay LinearLayout -->
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true">  <!-- Align at bottom -->
+
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- First TextView -->
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:fontFamily="@font/segoe_ui_bold"
+                android:shadowColor="#80000000"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="3"
+                android:text="Zambia Airforce news"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textview2"
+                android:layout_width="299dp"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:fontFamily="@font/segoe_ui_regular"
+                android:text="Latest news from Airforce...See More"
+                android:textColor="#ECEFF1"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

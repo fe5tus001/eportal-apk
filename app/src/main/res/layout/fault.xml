@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/editTextDepartments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/element_spacing"
+        android:layout_marginStart="@dimen/default_padding"
+        android:text="@string/fault_history"
+        android:textSize="@dimen/subtitle_text_size" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:layout_marginBottom="@dimen/element_spacing" />
+    <ListView
+        android:id="@+id/faultHistoryListView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/default_padding" />
+
+    <EditText
+        android:id="@+id/faultDescription"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edit_text_background"
+        android:drawableTint="@color/colorTextBlack"
+        android:hint="Describe Fault"
+        android:gravity="top"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="20dp"
+        android:textColor="@color/colorTextBlack"
+        android:textColorHint="@color/colorPlaceholder"
+        android:lines="3" />
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/element_spacing" />
+
+    <ImageView
+        android:id="@+id/uploadedImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="@dimen/element_spacing"
+        android:src="@android:drawable/ic_menu_camera"
+        android:scaleType="centerCrop"
+        android:contentDescription="Uploaded Image" />
+
+    <Button
+        android:id="@+id/submitFaultButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/button_background"
+        android:textColor="@color/colorButtonText"
+        android:text="Submit Fault Report"
+        android:layout_marginTop="16dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/element_spacing"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar" />
+</LinearLayout>

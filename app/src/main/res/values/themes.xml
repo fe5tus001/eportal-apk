@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyEPortal" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#0E68FF</item>
+        <item name="colorPrimaryVariant">@color/colorPrimary</item>
+        <item name="colorOnPrimary">@color/colorTextBlack</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorWhite</item>
+        <item name="colorSecondaryVariant">@color/colorPrimary</item>
+        <item name="colorOnSecondary">@color/colorWhite</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/colorWhite</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@drawable/home_background</item>
+
+        <item name="android:windowLightStatusBar">true</item>
+
+
+    </style>
+</resources>

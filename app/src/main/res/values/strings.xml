@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My E-Portal</string>
+    <string name="password">Password</string>
+    <string name="attestation_date">Attestation Date</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="singular_days">Day</string>
+    <string name="plural_days">Days</string>
+    <string name="plural_month">Months</string>
+    <string name="singular_month">Month</string>
+
+    <!-- Salary Advance Form Strings -->
+    <string name="salary_advance_form">Salary Advance Form</string>
+    <string name="advance_amount">Advance Amount</string>
+    <string name="slider_advance_amount">Adjust the advance amount slider</string>
+    <string name="selected_amount_default">Selected Amount: 0</string>
+    <string name="duration">Duration</string>
+    <string name="duration_hint">Enter duration</string>
+    <string name="months">Months</string>
+    <string name="start_date_hint">Select Start Date</string>
+    <string name="end_date_hint">Select End Date</string>
+    <string name="reason_for_advance">Reason for Advance</string>
+    <string name="reason_hint">Provide your reason here</string>
+    <string name="submit">Submit</string>
+    <string name="welcome">Welcome</string>
+    <string name="fault_history">Fault History</string>
+
+    <!-- Leave Types -->
+    <string-array name="leave_types">
+        <item>Occasional Leave</item>
+        <item>Vacation Leave</item>
+        <item>Hours Pass</item>
+        <item>Compassionate Leave</item>
+        <item>Maternity Leave</item>
+        <item>Paternity Leave</item>
+        <item>Unpaid Leave</item>
+    </string-array>
+
+    <!-- Provinces -->
+    <string-array name="provinces">
+        <item>Lusaka Province</item>
+        <item>Central Province</item>
+        <item>Copperbelt Province</item>
+        <item>North-Western Province</item>
+        <item>Muchinga Province</item>
+        <item>Northern Province</item>
+        <item>Eastern Province</item>
+        <item>Western Province</item>
+        <item>Southern Province</item>
+        <item>Luapula Province</item>
+    </string-array>
+</resources>

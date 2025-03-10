@@ -1,0 +1,30 @@
+<resources>
+    <!-- Margins & Paddings -->
+    <dimen name="default_padding">20dp</dimen>
+    <dimen name="padding">10dp</dimen>
+    <dimen name="small_padding">12dp</dimen>
+    <dimen name="default_margin">20dp</dimen>
+    <dimen name="medium_padding">24dp</dimen> <!-- Increased for better spacing -->
+    <dimen name="large_padding">32dp</dimen>
+    <dimen name="section_spacing">48dp</dimen>
+    <dimen name="logo_size">150dp</dimen><!-- Extra spacing between major sections -->
+
+    <!-- Image Sizes -->
+    <dimen name="profile_image_size">72dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="header_text_size">40sp</dimen> <!-- Larger for better visibility -->
+    <dimen name="subtitle_text_size">16sp</dimen>
+    <dimen name="title_text_size">36sp</dimen>
+    <dimen name="button_text_size">20sp</dimen>
+    <dimen name="small_text_size">20sp</dimen>
+
+    <!-- EditText & Button Heights -->
+    <dimen name="edittext_height">60dp</dimen> <!-- Increased for better touch targets -->
+    <dimen name="button_height">60dp</dimen>
+
+    <!-- Special Margins for Sections -->
+    <dimen name="form_top_margin">32dp</dimen> <!-- Increased space above login form -->
+    <dimen name="element_spacing">24dp</dimen> <!-- More space between form elements -->
+    <dimen name="vertical_spacing_large">32dp</dimen> <!-- Extra large spacing for separation -->
+</resources>

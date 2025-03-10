@@ -1,0 +1,140 @@
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<!-- Main Content -->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<!-- Header Layout -->
+		<LinearLayout
+			android:id="@+id/headerLayout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="center_vertical"
+			android:paddingHorizontal="@dimen/default_padding"
+			android:paddingVertical="@dimen/small_padding"
+			android:layout_marginBottom="@dimen/vertical_spacing_large"> <!-- Increased spacing -->
+
+			<ImageView
+				android:id="@+id/imageView2"
+				android:layout_width="@dimen/profile_image_size"
+				android:layout_height="@dimen/profile_image_size"
+				app:srcCompat="@drawable/roundel_of_zambia_svg" />
+
+			<TextView
+				android:id="@+id/usernameTextView"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/element_spacing"
+				android:layout_weight="1"
+				android:text=""
+				android:textSize="@dimen/small_text_size"
+				android:fontFamily="@font/segoe_ui_bold" />
+
+			<ImageView
+				android:id="@+id/btn_logout"
+				android:layout_width="24dp"
+				android:layout_height="24dp"
+				app:srcCompat="@drawable/logout_10" />
+		</LinearLayout>
+
+		<!-- Scrollable Content -->
+		<ScrollView
+			android:id="@+id/scrollView"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:fillViewport="true">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="@dimen/default_padding">
+
+				<!-- ViewPager inside CardView -->
+				<androidx.cardview.widget.CardView
+					android:layout_width="match_parent"
+					android:layout_height="250dp"
+					android:layout_marginBottom="@dimen/vertical_spacing_large"
+					app:cardCornerRadius="12dp"
+					app:cardElevation="4dp">
+
+					<androidx.viewpager.widget.ViewPager
+						android:id="@+id/viewPager"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent" />
+				</androidx.cardview.widget.CardView>
+
+				<!-- Departments Section -->
+				<TextView
+					android:id="@+id/editTextDepartments"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:paddingVertical="@dimen/element_spacing"
+					android:layout_marginStart="@dimen/default_padding"
+					android:text="Departments"
+					android:textSize="@dimen/subtitle_text_size" />
+
+				<View
+					android:id="@+id/divider2"
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:background="?android:attr/listDivider"
+					android:layout_marginBottom="@dimen/element_spacing" /> <!-- Added spacing -->
+
+				<!-- RecyclerView and Progress Bar -->
+				<FrameLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/element_spacing">
+
+					<ProgressBar
+						android:id="@+id/progressBar"
+						style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center" />
+
+					<androidx.recyclerview.widget.RecyclerView
+						android:id="@+id/recyclerView1"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="@dimen/small_padding"
+						android:nestedScrollingEnabled="false" />
+				</FrameLayout>
+
+				<!-- Notifications Section -->
+				<TextView
+					android:id="@+id/editTextName"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:paddingVertical="@dimen/element_spacing"
+					android:layout_marginStart="@dimen/default_padding"
+					android:text="Notifications"
+					android:textSize="@dimen/subtitle_text_size" />
+
+				<View
+					android:id="@+id/divider3"
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:background="?android:attr/listDivider"
+					android:layout_marginBottom="@dimen/element_spacing" /> <!-- Added spacing -->
+
+				<androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/recyclerView2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="@dimen/default_padding"
+					android:nestedScrollingEnabled="false" />
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+</FrameLayout>

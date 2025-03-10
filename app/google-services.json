@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "153890094201",
+    "project_id": "my-eportal",
+    "storage_bucket": "my-eportal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:153890094201:android:ab09b9b249e510e50f68a8",
+        "android_client_info": {
+          "package_name": "com.devnet.myeportal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-561Q7H73ECa5OFsz4ht5_4RaFOb2fW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

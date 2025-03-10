@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salary Advance Form"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Advance Amount -->
+        <TextView
+            android:id="@+id/editTextDepartments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingVertical="12dp"
+            android:text="Advance Amount"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="30dp"
+            android:background="?android:attr/listDivider" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/advance_amount_slider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/advance_amount_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Selected Amount: 0"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/TextDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingVertical="12dp"
+            android:text="Duration"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="30dp"
+            android:background="?android:attr/listDivider" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/durationEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableTint="@color/colorTextBlack"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="20dp"
+                android:hint="0"
+                android:textColor="@color/colorTextBlack"
+                android:textColorHint="@color/colorPlaceholder" />
+
+            <TextView
+                android:id="@+id/monthsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:drawableTint="@color/colorTextBlack"
+                android:focusable="false"
+                android:text="@string/plural_month"
+                android:textSize="20sp"
+                android:paddingHorizontal="20dp"
+                android:textColor="@color/colorTextBlack"
+                android:textColorHint="@color/colorPlaceholder" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/startDateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_text_background"
+            android:drawableTint="@color/colorTextBlack"
+            android:focusable="false"
+            android:hint="Start Date"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/colorTextBlack"
+            android:textColorHint="@color/colorPlaceholder" />
+
+        <EditText
+            android:id="@+id/endDateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_text_background"
+            android:drawableTint="@color/colorTextBlack"
+            android:focusable="false"
+            android:hint="End Date"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/colorTextBlack"
+            android:textColorHint="@color/colorPlaceholder" />
+
+        <TextView
+            android:id="@+id/ReasonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingVertical="12dp"
+            android:layout_marginTop="20dp"
+            android:text="Reason for Advance"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="30dp"
+            android:background="?android:attr/listDivider" />
+
+        <EditText
+            android:id="@+id/reason"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_background"
+            android:drawableTint="@color/colorTextBlack"
+            android:hint="Submit Reason"
+            android:gravity="top"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/colorTextBlack"
+            android:textColorHint="@color/colorPlaceholder"
+            android:lines="3" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Submit"
+            android:background="@drawable/button_background"
+            android:textColor="@color/colorButtonText" />
+
+    </LinearLayout>
+</ScrollView>

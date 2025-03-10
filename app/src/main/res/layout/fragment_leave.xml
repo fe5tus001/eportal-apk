@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Leave Summary Section -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="186dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+
+            <LinearLayout
+                android:layout_width="179dp"
+                android:layout_height="170dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/vacationLeaveDaysText"
+                    android:layout_width="168dp"
+                    android:layout_height="40dp"
+                    android:text="Vacation Leave Days:"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/occasionalLeaveDaysText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Occasional Leave Days:"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/lastLeaveDateText"
+                    android:layout_width="168dp"
+                    android:layout_height="40dp"
+                    android:text="Last Leave Date:"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/nextVacationDueText"
+                    android:layout_width="168dp"
+                    android:layout_height="40dp"
+                    android:text="Next Vacation Due:"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="169dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/vacationLeaveDays"
+                    android:layout_width="203dp"
+                    android:layout_height="40dp"
+                    android:text="0"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/occasionalLeaveDays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="0"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/lastLeaveDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="No leave details found"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/nextVacationDue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="No leave details found"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/editTextDepartments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingVertical="12dp"
+            android:text="Apply for Leave"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="30dp"
+            android:background="?android:attr/listDivider" />
+
+        <Spinner
+            android:id="@+id/leaveTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="30dp" />
+
+
+        <TextView
+            android:id="@+id/addressText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:drawableTint="@color/colorTextBlack"
+            android:hint="Destination"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/colorTextBlack"
+            android:textColorHint="@color/colorPlaceholder"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="30dp"
+            android:background="?android:attr/listDivider" />
+
+
+        <EditText
+            android:id="@+id/destinationText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_text_background"
+            android:drawableTint="@color/colorTextBlack"
+            android:hint="Street"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/colorTextBlack"
+            android:textColorHint="@color/colorPlaceholder" />
+
+        <EditText
+            android:id="@+id/townText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_text_background"
+            android:drawableTint="@color/colorTextBlack"
+            android:hint="Town"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/colorTextBlack"
+            android:textColorHint="@color/colorPlaceholder" />
+
+        <Spinner
+            android:id="@+id/provinceSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="30dp" />
+
+        <TextView
+            android:id="@+id/TextDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingVertical="12dp"
+            android:text="Duration"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="30dp"
+            android:background="?android:attr/listDivider" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/durationEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/edit_text_background"
+                android:drawableTint="@color/colorTextBlack"
+                android:inputType="textEmailAddress"
+                android:paddingHorizontal="20dp"
+                android:hint="0"
+                android:textColor="@color/colorTextBlack"
+                android:textColorHint="@color/colorPlaceholder" />
+
+            <TextView
+                android:id="@+id/daysText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:drawableTint="@color/colorTextBlack"
+                android:focusable="false"
+                android:text="@string/plural_days"
+                android:textSize="20sp"
+                android:paddingHorizontal="20dp"
+                android:textColor="@color/colorTextBlack"
+                android:textColorHint="@color/colorPlaceholder" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/startDateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_text_background"
+            android:drawableTint="@color/colorTextBlack"
+            android:focusable="false"
+            android:hint="Start Date"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/colorTextBlack"
+            android:textColorHint="@color/colorPlaceholder" />
+
+        <EditText
+            android:id="@+id/endDateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edit_text_background"
+            android:drawableTint="@color/colorTextBlack"
+            android:focusable="false"
+            android:hint="End Date"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/colorTextBlack"
+            android:textColorHint="@color/colorPlaceholder" />
+
+        <EditText
+            android:id="@+id/reasonEditText"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/edit_text_background"
+            android:drawableTint="@color/colorTextBlack"
+            android:hint="Reason for Leave"
+            android:inputType="textMultiLine"
+            android:paddingTop="16dp"
+            android:paddingLeft="16dp"
+            android:gravity="top"
+            android:lines="4"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/colorTextBlack"
+            android:textColorHint="@color/colorPlaceholder" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/colorButtonText"
+            android:text="Submit" />
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
